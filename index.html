@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <link rel="icon" type="image/png" sizes="16x16" href="image/logo-provinsi-kalbar.png">
+    <link rel="icon" type="image/png" href="image/logo-provinsi-kalbar.png">
     
     <title>Portal Aplikasi | Pemprov KalBar</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
     
     <style>
         body {
@@ -21,7 +21,7 @@
             width: 100vw;
             height: 100vh;
             background-size: cover;
-            background-repeat: no-repeat;
+            background-repeat: repeat-y;
             animation: slideshow 15s ease-in-out infinite;
         }
         @keyframes slideshow {
@@ -112,14 +112,57 @@
         }
     </style>
 </head>
+<body class="bg-cover bg-center slideshow  min-h-screen flex flex-col">
+    <header class="px-4">
+        <nav class="lg:px-6 py-2.5 ">
+            <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+                <a 
+                    href="https://kalbarprov.go.id/" 
+                    class="flex items-center gap-2 shadow-xl text-lg  backdrop-blur-md lg:font-semibold isolation-auto border-gray-50 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-emerald-500 hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 py-2 overflow-hidden border-2 rounded-full group"
+                >
+                    <img src="image/logo-provinsi-kalbar.png" class="mr-3 h-4 sm:h-9"/>
+                    <span class="self-center text-base font-semibold whitespace-nowrap text-white hidden md:block">
+                        Website Utama
+                    </span>
+                    
+                    <svg
+                        class="w-8 h-8 justify-end group-hover:rotate-90 group-hover:bg-gray-50 text-gray-50 ease-linear duration-300 rounded-full border border-gray-700 group-hover:border-none p-2 rotate-45"
+                        viewBox="0 0 16 19"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M7 18C7 18.5523 7.44772 19 8 19C8.55228 19 9 18.5523 9 18H7ZM8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 18L9 1H7L7 18H9Z"
+                            class="fill-white group-hover:fill-gray-800"
+                        ></path>
+                    </svg>
+                </a>
 
-<body class="bg-cover bg-center bg-secondary slideshow">
-    <div class="flex items-center justify-center min-h-screen bg-green-100/50">
+                <div class="flex items-center lg:order-2 text-slate-200">
+                    <a href="https://www.facebook.com/KalbarProv" target="_blank" class="text-lg text-slate-400 hover:text-slate-100 mx-2">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://instagram.com/kalbarprov?igshid=YmMyMTA2M2Y=" target="_blank" class="text-lg text-slate-400 hover:text-slate-100 mx-2">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com/kalbarprovgoid" target="_blank" class="text-lg text-slate-400 hover:text-slate-100 mx-2">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@provkalbar.official" target="_blank" class="text-lg text-slate-400 hover:text-slate-100 mx-2">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@kalbarprov?_t=8a4y45m6pjV&amp;_r=1" target="_blank" class="text-lg text-slate-400 hover:text-slate-100 mx-2">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="flex items-center justify-center mb-4 px-4">
         <div class="container mx-auto text-center">
-            <img src="image/logo-provinsi-kalbar.png" alt="Logo" class="mx-auto h-28">
+            <h1 class="text-4xl text-slate-200 font-bold mt-6 mb-4">PORTAL LAYANAN</h1>
 
-            <h1 class="text-4xl font-bold mt-6 mb-4">PORTAL LAYANAN</h1>
-            <p class="text-lg text-gray-700 max-w-4xl mx-auto mb-6">
+            <p class="text-lg text-slate-100 max-w-4xl mx-auto mb-6 ">
                 Portal Layanan Pemerintah Provinsi Kalimantan Barat
             </p>
 
@@ -130,123 +173,186 @@
                     placeholder="Cari layanan..."
                 >
                 <button type="submit" class="absolute top-1/2 transform -translate-y-1/2 right-3 text-gray-500">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-</svg>
+                    <svg 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        fill="none" 
+                        viewBox="0 0 24 24" 
+                        stroke-width="1.5" 
+                        stroke="currentColor" 
+                        class="size-6"
+                    >
+                        <path 
+                            stroke-linecap="round" 
+                            stroke-linejoin="round" 
+                            d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                    </svg>
 
                 </button>
             </form>
 
             <div id="container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center px-4 sm:px-6 lg:px-10">
-                
-                <!-- Elemen-elemen akan ditambahkan di sini -->
+                <!-- Elemen Card dari JS -->
             </div>
         </div>
     </div>
 
+    <footer class="bg-green-900 text-slate-100 text-center py-2 mt-auto">
+        <p class="text-sm">
+            &copy; Pemerintah Provinsi Kalimantan Barat <script>document.write(new Date().getFullYear())</script>, All rights reserved.
+        </p>
+    </footer>
+
     <script>
-    // Data elemen disimpan dalam array
-    const items = [
-        {
-            svg: `
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 w-16 h-16 mx-auto mb-4">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z" />
-                </svg>
-            `,
-            title: "Data & Infrastructure Agility",
-            // description: "mParticle's customer data platform empowers you to integrate all of your data and orchestrate it across channels, partners, and systems.",
-            link: "https://kalbarprov.go.id/"
-        },
-        {
-            svg: `
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 w-16 h-16 mx-auto mb-4">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5Z" />
-                </svg>
+        // Data elemen disimpan dalam array
+        const items = [
+            {
+                svg: `
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 w-16 h-16 mx-auto mb-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z" />
+                    </svg>
+                `,
+                title: "Data & Infrastructure Agility",
+                // description: "mParticle's customer data platform empowers you to integrate all of your data and orchestrate it across channels, partners, and systems.",
+                link: "https://kalbarprov.go.id/"
+            },
+            {
+                svg: `
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 w-16 h-16 mx-auto mb-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5Z" />
+                    </svg>
 
-            `,
-            title: "Smart Branding",
-            // description: "Empower your brand with smart strategies and digital transformation.",
-            link: "https://kalbarprov.go.id/"
-        },
-        {
-            svg: `
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 w-16 h-16 mx-auto mb-4">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z" />
-                </svg>
-            `,
-            title: "Data & Infrastructure Agility",
-            // description: "mParticle's customer data platform empowers you to integrate all of your data and orchestrate it across channels, partners, and systems.",
-            link: "https://kalbarprov.go.id/"
-        },
-        {
-            svg: `
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 w-16 h-16 mx-auto mb-4">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z" />
-                </svg>
-            `,
-            title: "Smart Branding",
-            // description: "Empower your brand with smart strategies and digital transformation.",
-            link: "https://kalbarprov.go.id/"
-        },
-        {
-            svg: `
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 w-16 h-16 mx-auto mb-4">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z" />
-                </svg>
-            `,
-            title: "Data & Infrastructure Agility",
-            // description: "mParticle's customer data platform empowers you to integrate all of your data and orchestrate it across channels, partners, and systems.",
-            link: "https://kalbarprov.go.id/"
-        },
-        {
-            svg: `
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 w-16 h-16 mx-auto mb-4">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z" />
-                </svg>
-            `,
-            title: "Smart Branding",
-            // description: "Empower your brand with smart strategies and digital transformation.",
-            link: "https://kalbarprov.go.id/"
-        },
-        {
-            svg: `
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 w-16 h-16 mx-auto mb-4">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z" />
-                </svg>
-            `,
-            title: "Data & Infrastructure Agility",
-            // description: "mParticle's customer data platform empowers you to integrate all of your data and orchestrate it across channels, partners, and systems.",
-            link: "https://kalbarprov.go.id/"
-        },
-        {
-            svg: `
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 w-16 h-16 mx-auto mb-4">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z" />
-                </svg>
-            `,
-            title: "Smart Branding",
-            // description: "Empower your brand with smart strategies and digital transformation.",
-            link: "https://kalbarprov.go.id/"
-        },
-        
-    ];
+                `,
+                title: "Smart Branding",
+                // description: "Empower your brand with smart strategies and digital transformation.",
+                link: "https://kalbarprov.go.id/"
+            },
+            {
+                svg: `
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 w-16 h-16 mx-auto mb-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z" />
+                    </svg>
+                `,
+                title: "Data & Infrastructure Agility",
+                // description: "mParticle's customer data platform empowers you to integrate all of your data and orchestrate it across channels, partners, and systems.",
+                link: "https://kalbarprov.go.id/"
+            },
+            {
+                svg: `
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 w-16 h-16 mx-auto mb-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z" />
+                    </svg>
+                `,
+                title: "Smart Branding",
+                // description: "Empower your brand with smart strategies and digital transformation.",
+                link: "https://kalbarprov.go.id/"
+            },
+            {
+                svg: `
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 w-16 h-16 mx-auto mb-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z" />
+                    </svg>
+                `,
+                title: "Data & Infrastructure Agility",
+                // description: "mParticle's customer data platform empowers you to integrate all of your data and orchestrate it across channels, partners, and systems.",
+                link: "https://kalbarprov.go.id/"
+            },
+            {
+                svg: `
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 w-16 h-16 mx-auto mb-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z" />
+                    </svg>
+                `,
+                title: "Smart Branding",
+                // description: "Empower your brand with smart strategies and digital transformation.",
+                link: "https://kalbarprov.go.id/"
+            },
+            {
+                svg: `
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 w-16 h-16 mx-auto mb-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z" />
+                    </svg>
+                `,
+                title: "Data & Infrastructure Agility",
+                // description: "mParticle's customer data platform empowers you to integrate all of your data and orchestrate it across channels, partners, and systems.",
+                link: "https://kalbarprov.go.id/"
+            },
+            {
+                svg: `
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 w-16 h-16 mx-auto mb-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z" />
+                    </svg>
+                `,
+                title: "Smart Branding",
+                // description: "Empower your brand with smart strategies and digital transformation.",
+                link: "https://kalbarprov.go.id/"
+            },
+            {
+                svg: `
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 w-16 h-16 mx-auto mb-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z" />
+                    </svg>
+                `,
+                title: "Smart Branding",
+                // description: "Empower your brand with smart strategies and digital transformation.",
+                link: "https://kalbarprov.go.id/"
+            },
+            {
+                svg: `
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 w-16 h-16 mx-auto mb-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z" />
+                    </svg>
+                `,
+                title: "Data & Infrastructure Agility",
+                // description: "mParticle's customer data platform empowers you to integrate all of your data and orchestrate it across channels, partners, and systems.",
+                link: "https://kalbarprov.go.id/"
+            },
+            {
+                svg: `
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 w-16 h-16 mx-auto mb-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z" />
+                    </svg>
+                `,
+                title: "Smart Branding",
+                // description: "Empower your brand with smart strategies and digital transformation.",
+                link: "https://kalbarprov.go.id/"
+            },
+            {
+                svg: `
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 w-16 h-16 mx-auto mb-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z" />
+                    </svg>
+                `,
+                title: "Data & Infrastructure Agility",
+                // description: "mParticle's customer data platform empowers you to integrate all of your data and orchestrate it across channels, partners, and systems.",
+                link: "https://kalbarprov.go.id/"
+            },
+            {
+                svg: `
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 w-16 h-16 mx-auto mb-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z" />
+                    </svg>
+                `,
+                title: "Smart Branding",
+                // description: "Empower your brand with smart strategies and digital transformation.",
+                link: "https://kalbarprov.go.id/"
+            },
+            
+        ];
 
-    // Loop untuk menambahkan elemen ke dalam container
-    const container = document.getElementById('container');
-    items.forEach(item => {
-        container.innerHTML += `
-            <section class="container flex justify-center items-center">
-                <a href="${item.link}" target="_blank" class="card flex justify-center items-center">
-                    <div class="content">
-                        ${item.svg}
-                        <div class="h6 font-semibold">${item.title}</div>
-                    </div>
-                </a>
-            </section>
-        `;
-    });
-</script>
-
+        // Loop untuk menambahkan elemen ke dalam container
+        const container = document.getElementById('container');
+        items.forEach(item => {
+            container.innerHTML += `
+                <section class="container flex justify-center items-center">
+                    <a href="${item.link}" target="_blank" class="card flex justify-center items-center">
+                        <div class="content">
+                            ${item.svg}
+                            <div class="h6 font-semibold">${item.title}</div>
+                        </div>
+                    </a>
+                </section>
+            `;
+        });
+    </script>
 </body>
-
 </html>
